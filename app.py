@@ -18,7 +18,8 @@ app.title = "Dashboard energia"
 server = app.server
 app.config.suppress_callback_exceptions = True
 
-#Función para cargar los datos desde un archivo CSV
+#Función para cargar los datos desde un archivo CSV 
+#Esta función asume que el archivo CSV tiene una columna 'time' con las fechas y horas y es modificable
 def load_data():
     # Cargar el archivo CSV
     df = pd.read_csv("datos_energia.csv")
